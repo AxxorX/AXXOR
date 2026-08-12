@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <meta
+        name="description"
+        content="AXXOR — welcome to the hub."
+    >
+
+    <meta
+        name="theme-color"
+        content="#050505"
+    >
+
+    <title>AXXOR — Welcome to the Hub</title>
+
+
+    <!-- ================================
+         FONTS
+    ================================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ================================
+         STYLES
+    ================================= -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/intro.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         CUSTOM CURSOR
+    ================================== -->
+
+    <div
+        class="cursor"
+        id="cursor"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="cursor-dot"
+        id="cursor-dot"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =================================
+         GLOBAL AMBIENT BACKGROUND
+    ================================== -->
+
+    <div
+        class="ambient"
+        id="ambient"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="grain"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =================================
+         INTRO / HERO EXPERIENCE
+    ================================== -->
+
+    <main id="intro">
+
+
+        <!-- =========================
+             OPENING MESSAGE
+        ========================== -->
+
+        <section
+            class="intro-screen"
+            id="intro-screen"
+            aria-label="AXXOR introduction"
+        >
+
+
+            <div
+                class="opening-message"
+                id="opening-message"
+            >
+
+                <span class="opening-label">
+                    DON'T SCROLL
+                </span>
+
+                <span
+                    class="scroll-indicator"
+                    aria-hidden="true"
+                >
+                    ↓
+                </span>
+
+            </div>
+
+
+            <!-- =========================
+                 PFP STAGE
+            ========================== -->
+
+            <div
+                class="pfp-stage"
+                id="pfp-stage"
+                aria-hidden="true"
+            >
+
+                <div
+                    class="pfp-glow"
+                    id="pfp-glow"
+                ></div>
+
+                <div
+                    class="pfp-aura"
+                    id="pfp-aura"
+                ></div>
+
+
+                <div
+                    class="pfp-wrapper"
+                    id="pfp-wrapper"
+                >
+
+                    <img
+                        src="assets/pfp/axxor-pfp.png"
+                        alt="AXXOR"
+                        class="axxor-pfp"
+                        id="axxor-pfp"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 ATMOSPHERE
+            ========================== -->
+
+            <div
+                class="atmosphere"
+                id="atmosphere"
+                aria-hidden="true"
+            >
+
+                <div class="orb orb-one"></div>
+
+                <div class="orb orb-two"></div>
+
+                <div class="orb orb-three"></div>
+
+
+                <div class="particle-field">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 AXXOR TITLE
+            ========================== -->
+
+            <div
+                class="identity"
+                id="identity"
+                aria-hidden="true"
+            >
+
+                <p class="identity-pretitle">
+                    welcome to the hub of
+                </p>
+
+                <h1 class="identity-title">
+                    AXXOR
+                </h1>
+
+            </div>
+
+
+            <!-- =========================
+                 INTRO PROGRESS
+            ========================== -->
+
+            <div
+                class="intro-progress"
+                id="intro-progress"
+                aria-hidden="true"
+            >
+
+                <span class="progress-line"></span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================
+         MAIN SITE
+    ================================== -->
+
+    <div
+        class="site"
+        id="site"
+        aria-hidden="true"
+    >
+
+
+        <!-- =================================
+             NAVIGATION
+        ================================== -->
+
+        <header
+            class="site-header"
+            id="site-header"
+        >
+
+            <a
+                href="index.html"
+                class="brand"
+                data-transition
+                aria-label="AXXOR home"
+            >
+
+                <span class="brand-mark">
+                    A
+                </span>
+
+                <span class="brand-name">
+                    AXXOR
+                </span>
+
+            </a>
+
+
+            <nav
+                class="navigation"
+                id="navigation"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="pages/about.html"
+                    class="nav-link"
+                    data-page="about"
+                    data-transition
+                >
+                    <span class="nav-number">
+                        01
+                    </span>
+
+                    <span>
+                        ABOUT
+                    </span>
+                </a>
+
+
+                <a
+                    href="pages/now.html"
+                    class="nav-link"
+                    data-page="now"
+                    data-transition
+                >
+                    <span class="nav-number">
+                        02
+                    </span>
+
+                    <span>
+                        NOW
+                    </span>
+                </a>
+
+
+                <a
+                    href="pages/signals.html"
+                    class="nav-link"
+                    data-page="signals"
+                    data-transition
+                >
+                    <span class="nav-number">
+                        03
+                    </span>
+
+                    <span>
+                        SIGNALS
+                    </span>
+                </a>
+
+
+                <a
+                    href="pages/lab.html"
+                    class="nav-link"
+                    data-page="lab"
+                    data-transition
+                >
+                    <span class="nav-number">
+                        04
+                    </span>
+
+                    <span>
+                        LAB
+                    </span>
+                </a>
+
+            </nav>
+
+
+            <a
+                href="https://x.com/"
+                class="x-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                X
+
+                <span>
+                    ↗
+                </span>
+            </a>
+
+        </header>
+
+
+        <!-- =================================
+             MOBILE NAVIGATION
+        ================================== -->
+
+        <button
+            class="mobile-menu-button"
+            id="mobile-menu-button"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+
+            <span></span>
+
+            <span></span>
+
+        </button>
+
+
+        <div
+            class="mobile-menu"
+            id="mobile-menu"
+            aria-hidden="true"
+        >
+
+            <div class="mobile-menu-inner">
+
+                <p class="mobile-menu-label">
+                    NAVIGATION
+                </p>
+
+
+                <a
+                    href="pages/about.html"
+                    data-transition
+                >
+                    <span>
+                        01
+                    </span>
+
+                    ABOUT
+                </a>
+
+
+                <a
+                    href="pages/now.html"
+                    data-transition
+                >
+                    <span>
+                        02
+                    </span>
+
+                    NOW
+                </a>
+
+
+                <a
+                    href="pages/signals.html"
+                    data-transition
+                >
+                    <span>
+                        03
+                    </span>
+
+                    SIGNALS
+                </a>
+
+
+                <a
+                    href="pages/lab.html"
+                    data-transition
+                >
+                    <span>
+                        04
+                    </span>
+
+                    LAB
+                </a>
+
+
+                <a
+                    href="https://x.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mobile-x-link"
+                >
+                    X ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================
+             HOME CONTENT
+        ================================== -->
+
+        <main class="home-content">
+
+
+            <!-- =============================
+                 HOME INTRO
+            ============================== -->
+
+            <section
+                class="home-section home-intro"
+                id="home"
+            >
+
+                <div class="section-index">
+                    00 / HOME
+                </div>
+
+
+                <div class="home-intro-content">
+
+                    <p class="eyebrow">
+                        DIGITAL IDENTITY
+                    </p>
+
+                    <h2>
+                        Still
+                        <span>
+                            building.
+                        </span>
+                    </h2>
+
+                    <p class="home-description">
+                        A personal hub for experiments,
+                        ideas, signals and everything
+                        happening around AXXOR.
+                    </p>
+
+                </div>
+
+
+                <div class="scroll-hint">
+
+                    <span>
+                        EXPLORE
+                    </span>
+
+                    <span>
+                        ↓
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- =============================
+                 HUB NAVIGATION
+            ============================== -->
+
+            <section
+                class="home-section hub-section"
+                id="hub"
+            >
+
+                <div class="section-index">
+                    01 / THE HUB
+                </div>
+
+
+                <div class="hub-heading">
+
+                    <p class="eyebrow">
+                        ENTER
+                    </p>
+
+                    <h2>
+                        Explore
+                        <span>
+                            the hub.
+                        </span>
+                    </h2>
+
+                </div>
+
+
+                <div class="hub-grid">
+
+
+                    <!-- =========================
+                         ABOUT
+                    ========================== -->
+
+                    <a
+                        href="pages/about.html"
+                        class="hub-card"
+                        data-transition
+                    >
+
+                        <div class="hub-card-top">
+
+                            <span>
+                                01
+                            </span>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+
+                        <!-- NEW ICON -->
+
+                        <div class="card-icon">
+                            ◎
+                        </div>
+
+
+                        <div class="hub-card-content">
+
+                            <p>
+                                WHO
+                            </p>
+
+                            <h3>
+                                About
+                            </h3>
+
+                            <span class="hub-card-description">
+                                The person behind AXXOR.
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- =========================
+                         NOW
+                    ========================== -->
+
+                    <a
+                        href="pages/now.html"
+                        class="hub-card"
+                        data-transition
+                    >
+
+                        <div class="hub-card-top">
+
+                            <span>
+                                02
+                            </span>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+
+                        <!-- NEW ICON -->
+
+                        <div class="card-icon">
+                            ✦
+                        </div>
+
+
+                        <div class="hub-card-content">
+
+                            <p>
+                                CURRENT
+                            </p>
+
+                            <h3>
+                                Now
+                            </h3>
+
+                            <span class="hub-card-description">
+                                What I'm exploring right now.
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- =========================
+                         SIGNALS
+                    ========================== -->
+
+                    <a
+                        href="pages/signals.html"
+                        class="hub-card"
+                        data-transition
+                    >
+
+                        <div class="hub-card-top">
+
+                            <span>
+                                03
+                            </span>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+
+                        <!-- NEW ICON -->
+
+                        <div class="card-icon">
+                            ↗
+                        </div>
+
+
+                        <div class="hub-card-content">
+
+                            <p>
+                                THOUGHTS
+                            </p>
+
+                            <h3>
+                                Signals
+                            </h3>
+
+                            <span class="hub-card-description">
+                                Recent thoughts from X.
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- =========================
+                         LAB
+                    ========================== -->
+
+                    <a
+                        href="pages/lab.html"
+                        class="hub-card"
+                    >
+
+                        <div class="hub-card-top">
+
+                            <span>
+                                04
+                            </span>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+
+                        <!-- NEW ICON -->
+
+                        <div class="card-icon">
+                            ◇
+                        </div>
+
+
+                        <div class="hub-card-content">
+
+                            <p>
+                                EXPERIMENTS
+                            </p>
+
+                            <h3>
+                                Lab
+                            </h3>
+
+                            <span class="hub-card-description">
+                                Ideas, experiments and WIPs.
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =============================
+                 FEATURED IDENTITY
+            ============================== -->
+
+            <section
+                class="home-section identity-section"
+            >
+
+                <div class="section-index">
+                    02 / IDENTITY
+                </div>
+
+
+                <div class="identity-statement">
+
+                    <p>
+                        I'm not here
+                        to look finished.
+                    </p>
+
+                    <h2>
+                        I'm here
+                        <span>
+                            to build.
+                        </span>
+                    </h2>
+
+                </div>
+
+            </section>
+
+
+            <!-- =============================
+                 FOOTER
+            ============================== -->
+
+            <footer class="site-footer">
+
+
+                <div class="footer-left">
+
+                    <span class="footer-brand">
+                        AXXOR
+                    </span>
+
+                    <span class="footer-status">
+                        STILL BUILDING.
+                    </span>
+
+                </div>
+
+
+                <div class="footer-right">
+
+                    <a
+                        href="https://x.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        X ↗
+                    </a>
+
+
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GITHUB ↗
+                    </a>
+
+                </div>
+
+
+                <div class="footer-bottom">
+
+                    <span>
+                        © 2026 AXXOR
+                    </span>
+
+                    <span>
+                        BUILT IN PUBLIC
+                    </span>
+
+                </div>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <!-- =================================
+         PAGE TRANSITION
+    ================================== -->
+
+    <div
+        class="page-transition"
+        id="page-transition"
+        aria-hidden="true"
+    >
+
+        <div class="transition-panel"></div>
+
+        <div class="transition-content">
+
+            <span class="transition-label">
+                AXXOR
+            </span>
+
+            <span
+                class="transition-loader"
+                aria-hidden="true"
+            ></span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================
+         NO JAVASCRIPT FALLBACK
+    ================================== -->
+
+    <noscript>
+
+        <div class="noscript-warning">
+
+            <h1>
+                AXXOR
+            </h1>
+
+            <p>
+                This experience requires JavaScript.
+            </p>
+
+        </div>
+
+    </noscript>
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/intro.js"></script>
+
+    <script src="js/navigation.js"></script>
+
+    <script src="js/cursor.js"></script>
+
+
+</body>
+
+</html>
