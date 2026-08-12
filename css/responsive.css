@@ -1,0 +1,233 @@
+/* =========================================================
+   AXXOR — RESPONSIVE SYSTEM
+   Mobile first / tablet / desktop
+========================================================= */
+
+
+/* =========================================================
+   MOBILE — BASE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    :root {
+        --page-padding: 20px;
+    }
+
+
+    /* -----------------------------------------------------
+       GENERAL
+    ----------------------------------------------------- */
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .site {
+        min-height: 100svh;
+    }
+
+
+    /* -----------------------------------------------------
+       HEADER
+    ----------------------------------------------------- */
+
+    .site-header {
+        position: fixed;
+
+        height: 76px;
+
+        padding:
+            0
+            20px;
+
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(5, 5, 5, 0.92),
+                rgba(5, 5, 5, 0.35),
+                transparent
+            );
+
+        backdrop-filter: blur(12px);
+
+        opacity: 1;
+        transform: none;
+    }
+
+    .site[aria-hidden="false"] .site-header {
+        opacity: 1;
+        transform: none;
+    }
+
+
+    /* -----------------------------------------------------
+       BRAND
+    ----------------------------------------------------- */
+
+    .brand {
+        gap: 9px;
+    }
+
+    .brand-mark {
+        width: 30px;
+        height: 30px;
+
+        font-size: 11px;
+    }
+
+    .brand-name {
+        font-size: 11px;
+
+        letter-spacing: 0.13em;
+    }
+
+
+    /* -----------------------------------------------------
+       DESKTOP NAV HIDDEN
+    ----------------------------------------------------- */
+
+    .navigation {
+        display: none;
+    }
+
+    .x-link {
+        display: none;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE MENU BUTTON
+    ----------------------------------------------------- */
+
+    .mobile-menu-button {
+        display: block;
+
+        top: 18px;
+        right: 18px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE MENU
+    ----------------------------------------------------- */
+
+    .mobile-menu-inner {
+        padding:
+            100px
+            20px
+            40px;
+    }
+
+    .mobile-menu-inner > a {
+        font-size: clamp(38px, 12vw, 54px);
+
+        padding: 16px 0;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME SECTIONS
+    ----------------------------------------------------- */
+
+    .home-section {
+        min-height: 100svh;
+
+        padding:
+            110px
+            20px
+            80px;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME HERO
+    ----------------------------------------------------- */
+
+    .home-intro {
+        min-height: 100svh;
+
+        padding:
+            120px
+            20px
+            70px;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .home-intro .section-index {
+        position: absolute;
+
+        top: 100px;
+        left: 20px;
+    }
+
+
+    .home-intro .home-intro-content {
+    width: 100%;
+    max-width: 500px;
+
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+    .site[aria-hidden="false"]
+    
+    /* =========================================================
+   AXXOR — PERFORMANCE OVERRIDES
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* Remove expensive mobile backdrop blur */
+    .site-header,
+    .mobile-menu {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+
+    /* Keep hero visible */
+    .site[aria-hidden="false"] .home-intro-content {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+
+    /* Disable expensive continuous grain */
+    .grain {
+        animation: none !important;
+        opacity: 0.008 !important;
+    }
+
+    /* Avoid unnecessary hover/transform work */
+    .hub-card:hover,
+    .info-card:hover,
+    .lab-card:hover,
+    .signal-card:hover {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   LOW MOTION / LOW POWER FALLBACK
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+    }
+
+}
